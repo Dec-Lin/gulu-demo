@@ -21,6 +21,8 @@ new Vue({
 //单元测试
 import chai from 'chai'
 const expect = chai.expect
+import spies from 'chai-spies'
+chai.use(spies)
 
 {
     //动态生成一个按钮
@@ -97,7 +99,8 @@ const expect = chai.expect
     vm.$destroy()
 }
 
-//click
+//测试click
+//需要mock
 {
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
@@ -106,9 +109,9 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.$on('click',function(){
-       expect(1).to.equal(1)
-    })
+    let spy = chai.spy(function(){})
+    vm.$on('click',spy) //触发spy（间谍）函数
     let button = vm.$el
     button.click()
+    expect(spy).to.have.been.called()  //期待当button.click()执行之后，间谍函数已经被调用了
 }
