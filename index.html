@@ -48,6 +48,9 @@
     </div>
    <div class="box">
        <g-input value="error状态" @change="inputChange"></g-input>
+       <g-input value="error状态" v-model="message"></g-input>
+       <p>{{message}}</p>
+       <button @click="message += 1">+1</button>
    </div>
 
     <div class="box">
