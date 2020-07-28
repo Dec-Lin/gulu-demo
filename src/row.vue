@@ -1,15 +1,17 @@
 <template>
-<div class="row">
-    <slot></slot>
-</div>
+    <div class="row">
+        <slot></slot>
+    </div>
+
 </template>
 
+<script>
+
+</script>
+
 <style scoped lang="scss">
-    .row{
-        display: flex;
-    }
+.row{
+    display:flex;
+}
+
 </style>
-
-<scrtipt>
-
-</scrtipt>
