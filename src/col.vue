@@ -41,8 +41,6 @@
 
 <style scoped lang="scss">
     .col {
-        width: 50%;
-
 
         $class-prefix: col-; /*申明一个 class 前缀*/
         @for $n from 1 through 24 { /*for循环 从1 到24*/
