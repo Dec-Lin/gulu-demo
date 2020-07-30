@@ -44,25 +44,36 @@
     <div style="border:1px solid black">
 
 
-        <g-row gutter="20" align="left">
-            <g-col>1</g-col>
-            <g-col>2</g-col>
+        <!--        <g-row gutter="20" align="left">-->
+        <!--            <g-col>1</g-col>-->
+        <!--            <g-col>2</g-col>-->
+        <!--        </g-row>-->
+        <!--        <g-row gutter="20" align="right">-->
+        <!--            <g-col>1</g-col>-->
+        <!--            <g-col>2</g-col>-->
+        <!--            <g-col>3</g-col>-->
+        <!--        </g-row>-->
+        <!--        <g-row gutter="14">-->
+        <!--            <g-col sapn="6">1</g-col>-->
+        <!--            <g-col span="3" offset="2">2</g-col>-->
+        <!--            <g-col span="3">3</g-col>-->
+        <!--            <g-col span="7" offset="3">4</g-col>-->
+        <!--        </g-row>-->
+        <g-row gutter="20">
+            <g-col sapn="2"
+                   :ipad="{span:12}"
+                   :narrow-pc="{span:8}"
+                   :pc="{span:4}"
+                   :wide-pc="{span:2}"
+            >1</g-col>
+            <g-col span="22"
+                   :ipad="{span:12}"
+                   :narrow-pc="{span:16}"
+                   :pc="{span:20}"
+                   :wide-pc="{span:22}"
+            >2</g-col>
         </g-row>
-        <g-row gutter="20" align="right">
-            <g-col>1</g-col>
-            <g-col>2</g-col>
-            <g-col>3</g-col>
-        </g-row>
-        <g-row gutter="14">
-            <g-col sapn="6">1</g-col>
-            <g-col span="3" offset="2">2</g-col>
-            <g-col span="3">3</g-col>
-            <g-col span="7" offset="3">4</g-col>
-        </g-row>
-<!--        <g-row>-->
-<!--            <g-col span="2">1</g-col>-->
-<!--            <g-col span="20" offset="2">2</g-col>-->
-<!--        </g-row>-->
+
 
     </div>
 

@@ -43,8 +43,8 @@
 <style scoped lang="scss">
 .row{
     display:flex;
-
-    &.align-lfet{
+    flex-wrap:wrap;
+    &.align-left{
         justify-content:flex-start;
     }
     &.align-right{
